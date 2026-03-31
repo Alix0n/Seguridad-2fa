@@ -2,8 +2,9 @@ import Mensaje from '../modelos/mensaje.modelo.js';
 import { generarHashMensaje } from '../utilidades/hash.js';
 
 // Recibe un mensaje, verifica su integridad y lo guarda si es auténtico
-export const recibirVerificarMensaje = async (datos, hashRecibido) => {
-    const hashCalculado = generarHashMensaje(datos);
+export const recibirVerificarMensaje = async (carga, hashRecibido) => {
+    console.log("CÁRGA RECIBIDA:", carga);
+    const hashCalculado = generarHashMensaje(carga);
 
     const esIntegro = hashCalculado === hashRecibido;
 
@@ -13,12 +14,13 @@ export const recibirVerificarMensaje = async (datos, hashRecibido) => {
     }
 
     const nuevoMensaje = new Mensaje({
-        contenido: datos.contenido,
-        emisor: datos.emisor,
-        enviadoEl: datos.timestamp,
+        contenido: carga.contenido,
+        remitente: carga.remitente,
+        enviadoEl: carga.timestamp,
         hashRecibido: hashRecibido,
         estadoIntegridad: 'Íntegro'
     });
+    console.log("REMITENTE:", carga.remitente);
 
     await nuevoMensaje.save();
 

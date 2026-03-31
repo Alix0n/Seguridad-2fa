@@ -9,6 +9,6 @@ export const env = {
 
 // Verifica que las variables de entorno críticas estén presentes
 if (!env.MONGO_URI) {
-    console.error("❌ ERROR: Falta MONGO_URI en el archivo .env del Sistema B");
+    console.error("ERROR: Falta MONGO_URI en el archivo .env del Sistema B");
     process.exit(1);
 }

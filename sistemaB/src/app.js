@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import rutasMensajes from './rutas/mensaje.rutas.js';
+import rutasMensajes from './rutas/mensaje.ruta.js';
 
 const app = express();
 

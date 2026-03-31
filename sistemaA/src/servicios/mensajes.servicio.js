@@ -9,7 +9,7 @@ export const enviarMensajeASistemaB = async (contenido, usuario) => {
         timestamp: new Date().toISOString()
     };
 
-    const hashMensaje = generarHashMensaje(carga);B
+    const hashMensaje = generarHashMensaje(carga);
     const urlSistemaB = process.env.SISTEMA_B_URL || 'http://127.0.0.1:4000/api/mensajes/recibir';
 
     try {
