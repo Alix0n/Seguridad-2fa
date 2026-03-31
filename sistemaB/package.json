@@ -1,0 +1,17 @@
+{
+  "name": "sistema-b-receptor",
+  "version": "1.0.0",
+  "description": "Backend - Sistema secundario receptor y verificador de integridad",
+  "main": "src/servidor.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/servidor.js",
+    "dev": "node --no-warnings --watch src/servidor.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.2"
+  }
+}
