@@ -39,6 +39,10 @@ El Sistema A tiene como objetivo:
 
 ---
 
+## Diagrama simple de arquitectura.
+
+![Diagrama de arquitectura](assets/arquitectura_sistemaA.png)
+
 ##  Arquitectura del Sistema
 
 ```
@@ -117,7 +121,7 @@ SYSTEM_B_URL=http://127.0.0.1:4000/api/messages/receive
 
 ---
 
-## ▶Ejecución
+## Ejecución
 
 Para ejeuctar escriba el siguiente comando en la terminal.
 
