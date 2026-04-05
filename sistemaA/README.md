@@ -90,7 +90,7 @@ node -v
 **1. Clonar el repositorio:**
 
 ```bash
-git clone https://github.com/tu-usuario/sistemaA.git
+git clone https://github.com/Alix0n/Seguridad-2fa.git
 ```
 
 **2. Acceder al proyecto:**

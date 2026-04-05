@@ -3,7 +3,6 @@ import { generarHashMensaje } from '../utilidades/hash.js';
 
 // Recibe un mensaje, verifica su integridad y lo guarda si es auténtico
 export const recibirVerificarMensaje = async (carga, hashRecibido) => {
-    console.log("CÁRGA RECIBIDA:", carga);
     const hashCalculado = generarHashMensaje(carga);
 
     const esIntegro = hashCalculado === hashRecibido;
@@ -20,9 +19,13 @@ export const recibirVerificarMensaje = async (carga, hashRecibido) => {
         hashRecibido: hashRecibido,
         estadoIntegridad: 'Íntegro'
     });
-    console.log("REMITENTE:", carga.remitente);
 
     await nuevoMensaje.save();
 
     return nuevoMensaje;
 };
+
+
+
+
+
