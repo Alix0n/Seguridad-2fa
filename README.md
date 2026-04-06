@@ -33,6 +33,12 @@ El sistema fue diseñado para cumplir con los siguientes pilares:
 
 > La comunicación entre el Frontend y el Sistema A está protegida por JWT en las cabeceras de autorización, mientras que la comunicación entre el Sistema A y el Sistema B viaja firmada criptográficamente.
 
+## Diagrama de Comunicación entre Modulos
+
+La siguiente representación gráfica muestra de manera más simple  la comunicación entre los tres modulos planteados para el desarrollo de este proyecto.
+
+![Diagrama de Comunicación](assets/Comunicacion.png)
+
 ---
 
 ## Estructura del Repositorio
@@ -108,6 +114,11 @@ El detalle exhaustivo de los flujos de comunicación, decisiones arquitectónica
 Taller3_Seguridad_AlixonLopez_RobinsonMolina.pdf
 ```
 
+Adicionalmente, puede encontrar las pautas y especificaciones del taller-proyceto en: 
+
+```
+Proyecto_Seguridad_Software_II.pfd
+```
 ---
 
 ## Autores
